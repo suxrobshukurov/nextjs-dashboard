@@ -10,27 +10,6 @@ import { Metadata } from 'next';
  
 export const metadata: Metadata = {
   title: 'Invoices',
-  description: 'The official Next.js Course Dashboard, built with App Router.',
-  metadataBase: new URL('https://nextjs-dashboard-sable-one-24.vercel.app/'),
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-  icons: {
-    icon: '/favicon.ico',
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  alternates: {
-    canonical: "/dashboard/invoices/"
-  }
 };
 
 export default async function Page({
