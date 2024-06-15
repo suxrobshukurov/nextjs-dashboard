@@ -1,6 +1,34 @@
 import '@/app/ui/global.css';
 import { inter } from "@/app/ui/fonts";
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'Acme Dashboard',
+  },
+  description: 'The official Next.js Course Dashboard, built with App Router.',
+  metadataBase: new URL('https://nextjs-dashboard-sable-one-24.vercel.app/'),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  alternates: {
+    canonical: "/"
+  }
+};
 export default function RootLayout({
   children,
 }: {
